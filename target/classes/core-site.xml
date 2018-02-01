@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+    <!--hdfs-->
+    <property>
+        <name>fs.defaultFS</name>
+        <value>hdfs://mini1:9000</value>
+    </property>
+
+    <!--hbase-->
+    <property>
+        <name>hbase.rootdir</name>
+        <value>hdfs://mini1:9000/hbase</value>
+    </property>
+    <property>
+        <name>hbase.zookeeper.quorum</name>#zookeeper地址
+        <value>mini1,mini2,mini3</value>
+    </property>
+
+</configuration>
